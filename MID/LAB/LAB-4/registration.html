@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/registration.css" />
+  </head>
+  <body>
+    <form action="">
+      <h1>Application Form for The Library</h1>
+      <label for="name" name="name">Name: </label>
+      <input type="text" name="name" id="name1" />
+      <br />
+      <label for="membership_Id" name="membership_Id">Membership ID: </label>
+      <input type="text" name="membership_Id" id="membership_Id1" />
+      <br />
+      <label for="email" name="email">Email: </label>
+      <input type="email" name="email" id="email1" required />
+      <br />
+      <label for="password" name="password">Password: </label>
+      <input type="password" name="password" id="password1" required />
+      <br />
+      <label for="confirm_password" name="confirm_password"
+        >Confirm Password:
+      </label>
+      <input
+        type="password"
+        name="confirm_password"
+        id="confirm_password1"
+        required
+      />
+      <br />
+      <label for="date_of_joining" name="date_of_joining"
+        >Date of Joining:
+      </label>
+      <input
+        type="date"
+        name="date_of_joining"
+        id="date_of_joining1"
+        required
+      />
+      <br />
+
+      <label for="upload_student_picture" name="upload_student_picture"
+        >Upload Student Picture:
+      </label>
+      <input
+        type="file"
+        name="upload_student_picture"
+        id="upload_student_picture1"
+        required
+      />
+      <br />
+      <label for="upload_student_signature" name="upload_student_signature"
+        >Upload Student Signature:
+      </label>
+      <input
+        type="file"
+        name="upload_student_signature"
+        id="upload_student_signature1"
+        required
+      />
+      <br />
+      <label for="contact_num" name="contact_num">Contact Number: </label>
+      <input type="tel" name="contact_num" id="contact_num1" required />
+      <br />
+      <label for="preffered_num_of_books" name="preffered_num_of_books"
+        >Preferred Number of Books:
+      </label>
+      <input
+        type="number"
+        name="preffered_num_of_books"
+        id="preffered_num_of_books1"
+        required
+      />
+      <br />
+      <label for="preffred_book_genre" name="preffred_book_genre"
+        >Preferred Book Genre:
+      </label>
+      <input
+        type="text"
+        name="preffred_book_genre"
+        id="preffred_book_genre1"
+        required
+      />
+      <br />
+      <label for="reading_hours_per_week" name="reading_hours_per_week"
+        >Reading Hours per Week:
+      </label>
+      <input
+        type="number"
+        name="reading_hours_per_week"
+        id="reading_hours_per_week1"
+        required
+      />
+      <br />
+      <label for="gender" name="gender"> Gender: </label>
+      <input type="radio" name="gender" value="male" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">Female</label>
+      <br />
+      <label for="membership_type" name="membership_type"
+        >Membership Type:
+      </label>
+      <input
+        type="checkbox"
+        name="membership_type"
+        value="student"
+        id="student1"
+      />
+      <label for="student1">Student</label>
+      <input
+        type="checkbox"
+        name="membership_type"
+        value="faculty"
+        id="faculty1"
+      />
+      <label for="faculty1">Faculty</label>
+      <input type="checkbox" name="membership_type" value="staff" id="staff1" />
+      <label for="staff1">Staff</label>
+      <br />
+
+      <label
+        for="preffered_library_selection"
+        name="preffered_library_selection"
+        >Preferred Library Selection:
+      </label>
+      <select
+        name="preffered_library_selection"
+        id="preffered_library_selection1"
+      >
+        <option value="friction">Fiction</option>
+        <option value="non-fiction">Non-Fiction</option>
+        <option value="arts_library">Arts Library</option>
+        <option value="engineering_library">Engineering Library</option>
+      </select>
+      <br />
+
+      <label for="additional_comments" name="additional_comments"
+        >Additional Comments:
+      </label>
+      <textarea
+        name="additional_comments"
+        id="additional_comments1"
+        cols="30"
+        rows="5"
+      ></textarea>
+      <br />
+      <button type="submit" name="submit" id="submit1">Submit</button>
+      <button type="reset" name="reset" id="reset1">Reset</button>
+    </form>
+  </body>
+</html>

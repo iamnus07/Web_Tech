@@ -1,0 +1,180 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    background:linear-gradient(135deg,#006A4E,#0d8b67,#F42A41);
+}
+
+/* Form Container */
+
+form{
+    width:850px;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(12px);
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+/* Heading */
+
+h1{
+    text-align:center;
+    margin-bottom:35px;
+    color:#006A4E;
+    font-size:32px;
+    font-weight:700;
+    border-bottom:3px solid #F42A41;
+    padding-bottom:10px;
+}
+
+/* Labels */
+
+label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:6px;
+    color:#222;
+    font-weight:500;
+}
+
+/* Inputs */
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date],
+input[type=file],
+input[type=tel],
+input[type=number],
+select,
+textarea{
+    width:100%;
+    padding:12px 15px;
+    border:2px solid #d8d8d8;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+    background:#fafafa;
+}
+
+/* Focus Effect */
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#006A4E;
+    box-shadow:0 0 10px rgba(0,106,78,.25);
+    background:white;
+}
+
+/* File Upload */
+
+input[type=file]{
+    padding:10px;
+    cursor:pointer;
+}
+
+/* Radio & Checkbox */
+
+input[type=radio],
+input[type=checkbox]{
+    margin-top:15px;
+    margin-left:8px;
+    transform:scale(1.1);
+}
+
+input[type=radio]+label,
+input[type=checkbox]+label{
+    display:inline;
+    margin-right:20px;
+    margin-left:5px;
+    font-weight:500;
+}
+
+/* Textarea */
+
+textarea{
+    resize:vertical;
+}
+
+/* Buttons */
+
+button{
+    margin-top:30px;
+    padding:13px 35px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+/* Submit Button */
+
+#submit1{
+    background:#006A4E;
+    color:white;
+}
+
+#submit1:hover{
+    background:#008d69;
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,106,78,.4);
+}
+
+/* Reset Button */
+
+#reset1{
+    background:#F42A41;
+    color:white;
+    margin-left:15px;
+}
+
+#reset1:hover{
+    background:#d91d35;
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(244,42,65,.35);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    form{
+        width:100%;
+        padding:25px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    button{
+        width:100%;
+        margin-left:0;
+        margin-top:15px;
+    }
+
+    #reset1{
+        margin-left:0;
+    }
+}
